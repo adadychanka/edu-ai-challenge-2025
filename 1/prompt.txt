@@ -1,0 +1,7 @@
+Imagine you are the tech lead and the project's architect with a solid background of 20+ years. The project is a social platform that is gonna be built from scratch. 
+The expected user base is in the millions, and it is expected to grow. The database is expected to store entities like profiles, posts, and connections between users. 
+High data read speed required. 
+Expected 80% read operations, 20% write operations. 
+Scalability is important.
+
+Your task is to find a type of database that is better suited for the requirements. You should provide a thoughtful explanation and perform an analysis step-by-step so I can see the logic behind the choice.
