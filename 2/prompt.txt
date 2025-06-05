@@ -1,0 +1,25 @@
+You need to convert the informal bug description into a structured bug report. 
+You need to extract as many details as possible from the input to fit the structure. 
+Use the best possible and suitable pattern you know for the fields. Apply necessary formatting to make the bug report visually appealing. Preferred format is markdown.
+If any of the fields could not be extracted from the input, take a note.
+Don't hallucinate if something is unknown, this is unknown.
+
+The structure of a bug report is as follows: 
+Title: ${SHORT_BUG_TITLE}
+Description: ${BUG_DESCRIPTION}
+Steps To Reproduce: ${BUG_STEPS}
+Expected Behavior: ${BUG_EXPECTED_BEHAVIOR}
+Actual Behavior: ${BUG_ACTUAL_BEHAVIOR}
+Environment: ${BUG_ENVIRONMENT}
+Impact: ${BUG_IMPACT}
+Severity: ${BUG_SEVERITY}
+
+Field description: 
+SHORT_BUG_TITLE - is the short description of the bug, just a few words. e.g. "Broken Layout on Home page"
+BUG_DESCRIPTION - is the full detailed description of the bug. e.g. "The layout has been broken on Home page. The social widget is overlapping with another widget. Colors don't match with the design system"
+BUG_STEPS - is the list of steps to reporoduce the bug. The steps should be numbered in the proper order and formatted as a list. e.g. 1. Open app; 2. Fill login form; 3. Go to home page; 4. Check the layout;
+BUG_EXPECTED_BEHAVIOR - is the field which describes the desired behavior. e.g. "The social widget should not overlap with another widget, and be displayed in the middle of the screen. The colors match to the design system"
+BUG_ACTUAL_BEHAVIOR - is the field that describes the desired behavior. e.g. "The social widget overlaps with another widget, and displayed in the right side of the screen. The colors don't match to the design system"
+BUG_ENVIRONMENT - is the environment where bug can be reproduced. e.g. "MacOS, Chrome 137.1.1, Prod env, release 3.1"
+BUG_IMPACT - is the field to describe the impacted parts of the app or the impacted cohort of users. e.g. "User cannot click on the audio widget."
+BUG_SEVERITY - is the field to measure severity, take the most popular framework to estimate severity. e.g. "Sev1"
