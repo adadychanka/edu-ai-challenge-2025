@@ -1,0 +1,40 @@
+### Input
+I'll send you text input in the following message. It can be a file or text. 
+
+### Task
+You need to perform sentiment analysis on it. Break down the input into several meaningful parts and measure the sentiment score for each part. 
+
+### Output
+The expected result of the analysis is a structured, valid JSON file.
+
+### Analysis
+The sentiment analysis should determine the emotional tone of the input. 
+Use the following sentiment scores to classify:
+Positive: Reflecting optimism or satisfaction.
+Neutral: Lacking strong emotional indicators.
+Negative: Reflecting dissatisfaction, criticism, or pessimism.
+
+The sentiment score can be a number ranging from -1 to 1.
+-1 indicates a very negative sentiment.
+0 indicates neutral sentiment.
++1 indicates very positive sentiment.
+The value can be a float.
+
+Here are a few examples of scoring:
+Example 1:
+Text: "I love how easy this app is to use. Great job!";
+Sentiment: Positive;
+Score: +1;
+
+Example 2:
+- Text: "The website keeps crashing every time I try to log in."
+-  Sentiment: Negative
+- Score: -1
+
+### Output requirements
+The result JSON file has to contain:
+- short concise summary of the input
+- total sentiment score
+- result of sentiment analysis along with score for each part
+- any metadata you deem useful
+
